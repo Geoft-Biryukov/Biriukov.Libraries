@@ -1,3 +1,5 @@
+using Biriukov.Mathematics.Geometry;
+
 namespace Biriukov.Mathematics.Tests
 {
     public class Vector3DTests

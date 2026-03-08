@@ -1,4 +1,4 @@
-﻿namespace Biriukov.Mathematics
+﻿namespace Biriukov.Mathematics.Geometry
 {
     /// <summary>
     /// Вектор в 3-х мерном пространстве
