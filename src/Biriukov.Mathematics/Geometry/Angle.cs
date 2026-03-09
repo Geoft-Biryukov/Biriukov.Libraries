@@ -1,4 +1,4 @@
-﻿namespace Biriukov.Orientation.Core
+﻿namespace Biriukov.Mathematics.Geometry
 {
     /// <summary>
     /// Структура для хранения угла

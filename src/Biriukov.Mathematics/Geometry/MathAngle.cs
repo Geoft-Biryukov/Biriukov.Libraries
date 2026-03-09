@@ -1,4 +1,4 @@
-﻿namespace Biriukov.Orientation.Core
+﻿namespace Biriukov.Mathematics.Geometry
 {
     public static class MathAngle
     {

@@ -1,4 +1,6 @@
-﻿namespace Biriukov.Orientation.Core
+﻿using Biriukov.Mathematics.Geometry;
+
+namespace Biriukov.Orientation.Core
 {
     /// <summary>
     /// Статические методы расширения для преобразования кватерниона ориентации в углы ориентации и обратно   

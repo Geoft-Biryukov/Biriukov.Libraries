@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Biriukov.Mathematics\Biriukov.Mathematics.csproj" />
+  </ItemGroup>
+
 </Project>

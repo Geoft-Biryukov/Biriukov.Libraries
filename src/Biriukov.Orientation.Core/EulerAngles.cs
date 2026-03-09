@@ -1,4 +1,6 @@
-﻿namespace Biriukov.Orientation.Core
+﻿using Biriukov.Mathematics.Geometry;
+
+namespace Biriukov.Orientation.Core
 {    
     /// <summary>
     /// Struct for Euler angles 
