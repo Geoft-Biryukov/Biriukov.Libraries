@@ -1,6 +1,8 @@
-using Biriukov.Orientation.Core;
 
-namespace Orientation.Core.Tests
+
+using Biriukov.Mathematics.Geometry;
+
+namespace Biriukov.Mathematics.Tests
 {
     public class AngleTests
     {

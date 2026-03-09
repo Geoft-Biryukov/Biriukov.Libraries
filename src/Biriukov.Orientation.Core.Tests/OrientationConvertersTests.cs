@@ -1,4 +1,5 @@
-﻿using Biriukov.Orientation.Core;
+﻿using Biriukov.Mathematics.Geometry;
+using Biriukov.Orientation.Core;
 
 namespace Orientation.Core.Tests;
 
