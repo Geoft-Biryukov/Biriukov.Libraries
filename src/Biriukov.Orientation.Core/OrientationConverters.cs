@@ -126,6 +126,14 @@ namespace Biriukov.Orientation.Core
 
             return new Quaternion(w, x, y, z);
         }
+
+        /// <summary>
+        /// Преобразует Vector3D в кватернион с нулевой скалярной частью
+        /// </summary>
+        /// <param name="v">Преобразовываемый вектор</param>
+        /// <returns>Кватернион с нулевой скалярной частью</returns>
+        public static Quaternion ToQuaternion(this Vector3D v)
+            => new Quaternion(0, v.X, v.Y, v.Z);
         #endregion
 
         #region ToEulerAngles
@@ -281,6 +289,16 @@ namespace Biriukov.Orientation.Core
                 r21, r22, r23,
                 r31, r32, r33);
         }
+        #endregion
+
+        #region ToVector3D
+        /// <summary>
+        /// Преобразует кватернион в Vector3D
+        /// </summary>
+        /// <param name="q">Преобразовываемый кватернион</param>
+        /// <returns>Векторная часть кватерниона</returns>
+        public static Vector3D ToVector3D(this Quaternion q)
+            => new Vector3D(q.X, q.Y, q.Z);
         #endregion
     }
 }

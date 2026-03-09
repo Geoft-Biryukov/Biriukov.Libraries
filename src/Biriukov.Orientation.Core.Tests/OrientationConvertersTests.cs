@@ -58,6 +58,28 @@ public class OrientationConvertersTests
         // Assert
         Assert.That(result.Equals(expected_result, 1e-10), Is.True);
     }
+
+    [Test]    
+    [TestCase(3.0, 4.5, 6.1)]
+    public void ToQuaternion_Vector3D_ReturnsCorrectValue(double x, double y, double z)
+    {
+        // Arrange
+        var v = new Vector3D(x, y, z);
+        
+        // Act
+        var result = v.ToQuaternion();
+
+        // Assert
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(result.W, Is.EqualTo(0.0));
+            Assert.That(result.X, Is.EqualTo(x));
+            Assert.That(result.Y, Is.EqualTo(y));
+            Assert.That(result.Z, Is.EqualTo(z));
+        });        
+    }
+
     #endregion
 
     #region ToEulerAngles
@@ -203,6 +225,27 @@ public class OrientationConvertersTests
             Assert.That(resultFromAngles.R33, Is.EqualTo(resultFromQuaternion.R33).Within(1e-10));
         });
 
+    }
+    #endregion
+
+    #region ToVector3D
+    [Test]
+    [TestCase(1.1, 3.0, 4.5, 6.1)]
+    public void ToVector3D_Quaternion_ReturnsCorrectValue(double w, double x, double y, double z)
+    {
+        // Arrange
+        var q = new Quaternion(w, x, y, z);
+
+        // Act
+        var result = q.ToVector3D();
+
+        // Assert
+        Assert.Multiple(() =>
+        {            
+            Assert.That(result.X, Is.EqualTo(x));
+            Assert.That(result.Y, Is.EqualTo(y));
+            Assert.That(result.Z, Is.EqualTo(z));
+        });
     }
     #endregion
 
