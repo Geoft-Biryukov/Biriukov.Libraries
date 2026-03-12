@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Biriukov.Mathematics\Biriukov.Mathematics.csproj" />
+    <ProjectReference Include="..\..\Biriukov.OptimalControl\Biriukov.OptimalControl.csproj" />
   </ItemGroup>
 
   <ItemGroup>

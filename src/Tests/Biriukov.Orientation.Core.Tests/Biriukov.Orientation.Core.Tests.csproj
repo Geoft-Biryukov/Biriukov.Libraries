@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Biriukov.Orientation.Core\Biriukov.Orientation.Core.csproj" />
+    <ProjectReference Include="..\..\Biriukov.Orientation.Core\Biriukov.Orientation.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
