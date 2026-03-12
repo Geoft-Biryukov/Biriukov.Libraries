@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Biriukov.OrdinaryDifferentialEquations\Biriukov.OrdinaryDifferentialEquations.csproj" />
+    <ProjectReference Include="..\..\Biriukov.Mathematics\Biriukov.Mathematics.csproj" />
   </ItemGroup>
 
   <ItemGroup>
