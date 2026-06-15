@@ -8,15 +8,15 @@
 
 # Biriukov.Mathematics
 Содержит основные математические сущности:
-- Vector3D - вектор в пространстве
-- Angle - обертка для углов (рад/гр)
-- MathAngle - функции для Angle (тригонометрия и др.)
+- `Vector3D` - вектор в пространстве
+- `Angle` - обертка для углов (рад/гр)
+- `MathAngle` - функции для `Angle` (тригонометрия и др.)
 
 # Biriukov.Orientation.Core
 Параметры ориентации:
-- Quaternion
-- EulerAngles
-- DirectionCosineMatrix
+- `Quaternion`
+- `EulerAngles`
+- `DirectionCosineMatrix`
 
 # Biriukov.OrdinaryDifferentialEquations
 
