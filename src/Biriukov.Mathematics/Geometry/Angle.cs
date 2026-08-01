@@ -38,8 +38,18 @@
         #endregion
 
         #region Creators
+        /// <summary>
+        /// Создает структуру Angle из значения угла в радианах 
+        /// </summary>
+        /// <param name="radians">Значение угла в радианах</param>
+        /// <returns>Структура Angle</returns>
         public static Angle FromRad(double radians) => new(radians);
 
+        /// <summary>
+        /// Создает структуру Angle из значения угла в градусах 
+        /// </summary>
+        /// <param name="degrees">Значение угла в градусах</param>
+        /// <returns>Структура Angle</returns>
         public static Angle FromDeg(double degrees) => new(degrees * degToRad);
         #endregion
 
